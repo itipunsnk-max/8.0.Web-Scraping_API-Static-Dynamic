@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Local HTML page for practicing web basics and CSS selectors">
+    <title>Web Scraping Zero to Practical - Local Mock</title>
+  </head>
+  <body>
+    <header id="site-header" class="site-header">
+      <nav aria-label="เมนูหลัก">
+        <a href="#overview" data-topic="overview">ภาพรวม</a>
+        <a href="#course-table" data-topic="html">ตารางบทเรียน</a>
+        <a href="#resources" data-topic="resources">แหล่งฝึก</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="overview" class="lesson-card" data-topic="html" data-level="beginner">
+        <img id="course-logo" class="course-image" src="assets/course-logo.svg" alt="โลโก้ Local Mock Website" width="160" height="80">
+        <h1 id="page-title">พื้นฐาน Web และ HTML</h1>
+        <p class="summary">หน้านี้ใช้ฝึกอ่านโครงสร้าง HTML และทดลอง CSS Selector ในเครื่องของเราเอง</p>
+      </section>
+
+      <section class="lesson-card" data-topic="http" data-level="beginner">
+        <h2 id="http-heading">HTTP ที่ควรรู้จัก</h2>
+        <ul class="concept-list">
+          <li data-concept="request">HTTP Request</li>
+          <li data-concept="response">HTTP Response</li>
+          <li data-concept="status">Status Code</li>
+        </ul>
+      </section>
+
+      <section id="course-data" class="lesson-card" data-topic="table" data-level="intermediate">
+        <h2>ตารางเส้นทางการเรียน</h2>
+        <table id="course-table" class="course-table">
+          <caption>ตัวอย่างข้อมูลบทเรียนสำหรับฝึก Selector</caption>
+          <thead>
+            <tr>
+              <th scope="col">ลำดับ</th>
+              <th scope="col">หัวข้อ</th>
+              <th scope="col">ระดับ</th>
+              <th scope="col">สถานะ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-course-id="web-01" data-level="beginner">
+              <td>1</td>
+              <td>Web และ URL</td>
+              <td>Beginner</td>
+              <td class="status-ready">พร้อมเรียน</td>
+            </tr>
+            <tr data-course-id="web-02" data-level="beginner">
+              <td>2</td>
+              <td>HTML และ CSS Selector</td>
+              <td>Beginner</td>
+              <td class="status-ready">พร้อมเรียน</td>
+            </tr>
+            <tr data-course-id="web-03" data-level="intermediate">
+              <td>3</td>
+              <td>Developer Tools</td>
+              <td>Intermediate</td>
+              <td class="status-review">กำลังทบทวน</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="resources" class="lesson-card" data-topic="links" data-level="beginner">
+        <h2>ลิงก์และ Attribute</h2>
+        <ul class="resource-list">
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" data-resource-type="reference">HTML Reference</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors" data-resource-type="reference">CSS Selectors Reference</a></li>
+          <li><a href="#course-data" data-resource-type="internal">กลับไปที่ตารางบทเรียน</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer">
+      <p>Local Mock Website สำหรับการเรียนเท่านั้น</p>
+    </footer>
+  </body>
+</html>

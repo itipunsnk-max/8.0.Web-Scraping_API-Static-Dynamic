@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160" role="img" aria-labelledby="title desc">
+  <title id="title">Web Scraping Course</title>
+  <desc id="desc">A simple local illustration of a browser window and data rows.</desc>
+  <rect width="320" height="160" rx="18" fill="#123047"/>
+  <rect x="24" y="28" width="272" height="104" rx="10" fill="#f4f7f9"/>
+  <circle cx="46" cy="45" r="6" fill="#e66b5d"/>
+  <circle cx="66" cy="45" r="6" fill="#f2c14e"/>
+  <circle cx="86" cy="45" r="6" fill="#5cb85c"/>
+  <path d="M52 78h216M52 101h156" stroke="#2b6f95" stroke-width="10" stroke-linecap="round"/>
+  <path d="M52 120h92" stroke="#9ab7c7" stroke-width="8" stroke-linecap="round"/>
+</svg>

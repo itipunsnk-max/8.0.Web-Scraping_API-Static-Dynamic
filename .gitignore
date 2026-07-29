@@ -1,0 +1,50 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.phase1-pip-temp/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated data and outputs
+data/raw/*
+data/processed/*
+data/samples/*
+output/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/samples/.gitkeep
+!output/.gitkeep
+
+# Browser and scraper artifacts
+playwright-report/
+test-results/
+screenshots/
+downloads/
+*.har
