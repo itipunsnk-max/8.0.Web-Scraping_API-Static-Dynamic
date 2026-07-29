@@ -56,7 +56,7 @@ Use Cases และ Capstone Project
 | 12 | Use Cases | ประกอบระบบจากปัญหาจริงหลายรูปแบบได้ — [Phase 12](12-use-cases.md) — เสร็จแล้ว |
 | 13 | Scheduling | ตั้งงานอัตโนมัติบน Windows ได้ — [Phase 13](13-scheduling-automation.md) — เสร็จแล้ว |
 | 14 | Documentation and CI | ตรวจ Test/Lint บน GitHub ได้ — [Phase 14](14-github-docs-ci.md) — เสร็จแล้ว |
-| 15 | Final Review | ทำ Capstone และตรวจความพร้อมเผยแพร่ได้ |
+| 15 | Final Review | ทำ Capstone และตรวจความพร้อมเผยแพร่ได้ — [Phase 15](15-final-review.md) — เสร็จแล้ว |
 
 ## กติกาการเรียน
 

@@ -21,7 +21,7 @@
 | 12 | Use Cases | เสร็จแล้ว |
 | 13 | Scheduling และ Automation | เสร็จแล้ว |
 | 14 | GitHub Documentation และ CI | เสร็จแล้ว |
-| 15 | Final Review | รอคำสั่ง |
+| 15 | Final Review | เสร็จแล้ว |
 
 ## หลักการร่วมทุก Phase
 
@@ -106,4 +106,4 @@ Phase จะถือว่าจบเมื่อไฟล์ตามขอ�
 
 ## ลำดับการทำงานต่อ
 
-หลังตรวจสอบ Phase 14 แล้ว ให้สั่งให้ดำเนินการ **Phase 15** โดยตรง การดำเนินการครั้งถัดไปจะตรวจสอบ Repository ปัจจุบันก่อนเริ่มสร้างไฟล์ของ Phase 15
+Phase 15 เป็น final review ของหลักสูตร เมื่อ merge แล้วสามารถใช้ `RELEASE_CHECKLIST.md` ตรวจ release และใช้ `VERCEL_DEPLOYMENT.md` เตรียมเผยแพร่ static documentation ได้
