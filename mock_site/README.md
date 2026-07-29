@@ -26,5 +26,7 @@ http://127.0.0.1:8000/index.html
 - `static/downloads.html` — หน้ารวมลิงก์ PDF และ SVG สำหรับฝึก Safe Download
 - `static/files/sample-guide.pdf` — PDF ตัวอย่างภายใน Repository
 - `static/assets/course-logo.svg` — รูปภาพ Local ที่ใช้ฝึก Attribute Selector และตรวจสอบ `alt`
+- `dynamic/index.html` — Dynamic Page ที่ JavaScript โหลดตาราง, Filter, Load More และสร้าง Download
+- `dynamic/app.js` — JavaScript fixture สำหรับฝึก Browser Automation แบบ Playwright
 
 ตัวอย่างนี้ไม่มี Login, CAPTCHA, API Key, Cookie หรือข้อมูลส่วนตัว

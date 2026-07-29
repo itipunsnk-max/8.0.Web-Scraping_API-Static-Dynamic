@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dynamic Catalog Mock</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 58rem; padding: 0 1rem; }
+      table { border-collapse: collapse; margin-top: 1rem; width: 100%; }
+      th, td { border: 1px solid #cbd5e1; padding: 0.5rem; text-align: left; }
+      th { background: #e2e8f0; }
+      form, .actions { align-items: end; display: flex; gap: 0.75rem; margin-top: 1rem; }
+      label { display: grid; gap: 0.25rem; }
+      button, select { font: inherit; padding: 0.4rem 0.6rem; }
+      [role="status"] { color: #334155; min-height: 1.5rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Dynamic Catalog</h1>
+      <p id="dynamic-status" role="status">Preparing catalog...</p>
+
+      <form id="filter-form">
+        <label for="category-filter">
+          Category
+          <select id="category-filter" name="category">
+            <option value="all">All</option>
+            <option value="books">Books</option>
+            <option value="electronics">Electronics</option>
+            <option value="home">Home</option>
+          </select>
+        </label>
+        <button type="submit">Apply filter</button>
+        <span id="filter-summary" role="status"></span>
+      </form>
+
+      <table id="catalog-table">
+        <caption>Catalog records loaded by JavaScript</caption>
+        <thead>
+          <tr><th>ID</th><th>Name</th><th>Category</th><th>Price</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="actions">
+        <button id="load-more" type="button" disabled>Load more</button>
+        <button id="download-csv" type="button">Download CSV</button>
+      </div>
+    </main>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
