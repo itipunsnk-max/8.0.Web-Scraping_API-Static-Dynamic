@@ -2,7 +2,7 @@
 
 คู่มือภาษาไทยสำหรับเรียน Web Scraping ด้วย Python ตั้งแต่พื้นฐานจนถึงการสร้างระบบที่นำไปใช้งานจริงได้ โดยเน้นความปลอดภัย จริยธรรม การดูแลรักษา และการส่งต่อข้อมูลไปยัง CSV, Excel, JSON, SQLite และ Power BI
 
-> สถานะปัจจุบัน: **Phase 4 — Static Website ด้วย Requests และ BeautifulSoup**
+> สถานะปัจจุบัน: **Phase 5 — Pagination และการดาวน์โหลดไฟล์**
 
 ## Web Scraping คืออะไร
 
@@ -42,7 +42,7 @@ API First หมายถึงการตรวจสอบก่อนว่�
 
 ## Course Roadmap
 
-ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md), [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md), [API First](docs/03-api-first.md) และ [Static Scraping](docs/04-static-scraping.md)
+ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md), [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md), [API First](docs/03-api-first.md), [Static Scraping](docs/04-static-scraping.md) และ [Pagination/Downloads](docs/05-pagination-downloads.md)
 
 ## Quick Start แบบย่อ
 
@@ -72,6 +72,8 @@ python .\examples\03_api_first\api_first.py --limit 5
 อ่านรายละเอียดได้ที่ [คู่มือ API First](docs/03-api-first.md)
 
 ทดลอง Static Scraping จาก Local Mock Store ได้ที่ [คู่มือ Static Scraping](docs/04-static-scraping.md)
+
+ทดลอง Pagination และ Safe Download ได้ที่ [คู่มือ Pagination และการดาวน์โหลดไฟล์](docs/05-pagination-downloads.md)
 
 หากต้องการตรวจสอบโครงสร้างและลำดับการเรียน ให้เปิด [ROADMAP.md](ROADMAP.md)
 

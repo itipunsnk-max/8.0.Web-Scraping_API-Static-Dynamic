@@ -46,7 +46,7 @@ Use Cases และ Capstone Project
 | 2 | Web, HTML, HTTP และ Developer Tools | อ่านโครงสร้างหน้าเว็บและตรวจ API ได้ — เสร็จแล้ว |
 | 3 | API First | ดึง JSON และ Export ผลลัพธ์ได้ — เสร็จแล้ว |
 | 4 | Static Scraping | อ่าน HTML และทำความสะอาดข้อมูลได้ — เสร็จแล้ว |
-| 5 | Pagination และไฟล์ | วนหน้าและดาวน์โหลดไฟล์อย่างปลอดภัยได้ |
+| 5 | Pagination และไฟล์ | วนหน้าและดาวน์โหลดไฟล์อย่างปลอดภัยได้ — เสร็จแล้ว |
 | 6 | Playwright | อ่านข้อมูลที่โหลดด้วย JavaScript ได้ |
 | 7 | Selenium | อ่านและดูแล Project ที่ใช้ Selenium ได้ |
 | 8 | Error Resilience | มี Retry, Logging, Rate Limit และ Validation |
@@ -80,3 +80,4 @@ Use Cases และ Capstone Project
 - [พื้นฐาน Web, HTML, HTTP และ Developer Tools](02-web-basics.md) — คำศัพท์และการฝึกด้วย Local Mock Website
 - [API First](03-api-first.md) — ตรวจ API, อ่าน JSON และ Export ผลลัพธ์
 - [Static Scraping](04-static-scraping.md) — ใช้ Requests และ BeautifulSoup กับ Local Mock Store
+- [Pagination และการดาวน์โหลดไฟล์](05-pagination-downloads.md) — วนหน้า, Deduplicate และ Safe Download
