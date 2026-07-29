@@ -45,7 +45,7 @@ Use Cases และ Capstone Project
 | 1 | ติดตั้ง Python และเครื่องมือ | Environment ที่พร้อมใช้งานบน Windows — เสร็จแล้ว |
 | 2 | Web, HTML, HTTP และ Developer Tools | อ่านโครงสร้างหน้าเว็บและตรวจ API ได้ — เสร็จแล้ว |
 | 3 | API First | ดึง JSON และ Export ผลลัพธ์ได้ — เสร็จแล้ว |
-| 4 | Static Scraping | อ่าน HTML และทำความสะอาดข้อมูลได้ |
+| 4 | Static Scraping | อ่าน HTML และทำความสะอาดข้อมูลได้ — เสร็จแล้ว |
 | 5 | Pagination และไฟล์ | วนหน้าและดาวน์โหลดไฟล์อย่างปลอดภัยได้ |
 | 6 | Playwright | อ่านข้อมูลที่โหลดด้วย JavaScript ได้ |
 | 7 | Selenium | อ่านและดูแล Project ที่ใช้ Selenium ได้ |
@@ -79,3 +79,4 @@ Use Cases และ Capstone Project
 - [การติดตั้งสำหรับผู้เริ่มต้น](01-installation.md) — คู่มือ Setup บน Windows PowerShell
 - [พื้นฐาน Web, HTML, HTTP และ Developer Tools](02-web-basics.md) — คำศัพท์และการฝึกด้วย Local Mock Website
 - [API First](03-api-first.md) — ตรวจ API, อ่าน JSON และ Export ผลลัพธ์
+- [Static Scraping](04-static-scraping.md) — ใช้ Requests และ BeautifulSoup กับ Local Mock Store

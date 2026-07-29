@@ -21,6 +21,7 @@ http://127.0.0.1:8000/index.html
 ## ไฟล์สำหรับฝึก
 
 - `static/index.html` — หน้า Static ที่มี ID, Class, Attribute, ตาราง, ลิงก์ และรูปภาพ
+- `static/products.html` — หน้า Local Mock Store สำหรับฝึก Requests และ BeautifulSoup
 - `static/assets/course-logo.svg` — รูปภาพ Local ที่ใช้ฝึก Attribute Selector และตรวจสอบ `alt`
 
 ตัวอย่างนี้ไม่มี Login, CAPTCHA, API Key, Cookie หรือข้อมูลส่วนตัว

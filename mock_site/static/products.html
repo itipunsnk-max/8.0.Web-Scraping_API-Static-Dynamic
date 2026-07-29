@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Mock Store</title>
+  </head>
+  <body>
+    <header id="store-header">
+      <h1>Local Mock Store</h1>
+      <p>หน้า Static สำหรับฝึก Requests และ BeautifulSoup</p>
+    </header>
+
+    <main id="store-content">
+      <section id="products" class="product-list" aria-labelledby="products-heading">
+        <h2 id="products-heading">สินค้า</h2>
+
+        <article class="product-card" data-product-id="store-001">
+          <img src="assets/course-logo.svg" alt="Wireless Mouse" width="120" height="60">
+          <h3 class="product-name">Wireless Mouse</h3>
+          <p class="product-price">฿1,299.00</p>
+          <p class="availability">มีสินค้า</p>
+          <a class="product-link" href="/products/wireless-mouse">ดูรายละเอียด</a>
+        </article>
+
+        <article class="product-card" data-product-id="store-002">
+          <img src="assets/course-logo.svg" alt="Mechanical Keyboard" width="120" height="60">
+          <h3 class="product-name">Mechanical Keyboard</h3>
+          <p class="product-price">฿2,490.00</p>
+          <p class="availability">สินค้าหมด</p>
+          <a class="product-link" href="/products/mechanical-keyboard">ดูรายละเอียด</a>
+        </article>
+
+        <article class="product-card" data-product-id="store-003">
+          <img src="assets/course-logo.svg" alt="Desk Lamp" width="120" height="60">
+          <h3 class="product-name">Desk Lamp</h3>
+          <p class="product-price">฿890.00</p>
+          <a class="product-link" href="/products/desk-lamp">ดูรายละเอียด</a>
+        </article>
+      </section>
+
+      <section id="inventory" aria-labelledby="inventory-heading">
+        <h2 id="inventory-heading">Inventory</h2>
+        <table id="inventory-table">
+          <caption>ข้อมูลคลังสินค้าสำหรับฝึกอ่านตาราง</caption>
+          <thead>
+            <tr>
+              <th scope="col">สินค้า</th>
+              <th scope="col">คงเหลือ</th>
+              <th scope="col">ตรวจล่าสุด</th>
+              <th scope="col">สถานะ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-product-id="store-001">
+              <td>Wireless Mouse</td>
+              <td>24</td>
+              <td>2026-07-29</td>
+              <td>พร้อมขาย</td>
+            </tr>
+            <tr data-product-id="store-002">
+              <td>Mechanical Keyboard</td>
+              <td>0</td>
+              <td>2026-07-29</td>
+              <td>หมดชั่วคราว</td>
+            </tr>
+            <tr data-product-id="store-003">
+              <td>Desk Lamp</td>
+              <td>8</td>
+              <td>2026-07-29</td>
+              <td>พร้อมขาย</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
