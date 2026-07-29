@@ -51,7 +51,7 @@ Use Cases และ Capstone Project
 | 7 | Selenium | อ่านและดูแล Project ที่ใช้ Selenium ได้ — [Phase 7](07-selenium.md) — เสร็จแล้ว |
 | 8 | Error Resilience | มี Retry, Logging, Rate Limit และ Validation — [Phase 8](08-error-resilience.md) — เสร็จแล้ว |
 | 9 | Ethics and Security | ประเมินสิทธิ์และความเสี่ยงก่อนทำงานได้ — [Phase 9](09-ethics-security.md) — เสร็จแล้ว |
-| 10 | Data Pipeline | จัดเก็บ Raw/Processed และ Export หลายรูปแบบได้ |
+| 10 | Data Pipeline | จัดเก็บ Raw/Processed และ Export หลายรูปแบบได้ — [Phase 10](10-data-pipeline.md) — เสร็จแล้ว |
 | 11 | Testing and Maintenance | ตรวจจับ Parser เสียหรือ Schema เปลี่ยนได้ |
 | 12 | Use Cases | ประกอบระบบจากปัญหาจริงหลายรูปแบบได้ |
 | 13 | Scheduling | ตั้งงานอัตโนมัติบน Windows ได้ |

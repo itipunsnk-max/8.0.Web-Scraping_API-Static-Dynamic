@@ -2,7 +2,7 @@
 
 คู่มือภาษาไทยสำหรับเรียน Web Scraping ด้วย Python ตั้งแต่พื้นฐานจนถึงการสร้างระบบที่นำไปใช้งานจริงได้ โดยเน้นความปลอดภัย จริยธรรม การดูแลรักษา และการส่งต่อข้อมูลไปยัง CSV, Excel, JSON, SQLite และ Power BI
 
-> สถานะปัจจุบัน: **Phase 9 — สิทธิ์ กฎหมาย จริยธรรม และความปลอดภัย**
+> สถานะปัจจุบัน: **Phase 10 — Export และ Data Pipeline**
 
 ## Web Scraping คืออะไร
 
@@ -42,7 +42,7 @@ API First หมายถึงการตรวจสอบก่อนว่�
 
 ## Course Roadmap
 
-ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md), [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md), [API First](docs/03-api-first.md), [Static Scraping](docs/04-static-scraping.md), [Pagination/Downloads](docs/05-pagination-downloads.md), [Dynamic Website ด้วย Playwright](docs/06-dynamic-playwright.md), [Selenium](docs/07-selenium.md), [ระบบรองรับ Error](docs/08-error-resilience.md) และ [สิทธิ์/จริยธรรม/ความปลอดภัย](docs/09-ethics-security.md)
+ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md), [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md), [API First](docs/03-api-first.md), [Static Scraping](docs/04-static-scraping.md), [Pagination/Downloads](docs/05-pagination-downloads.md), [Dynamic Website ด้วย Playwright](docs/06-dynamic-playwright.md), [Selenium](docs/07-selenium.md), [ระบบรองรับ Error](docs/08-error-resilience.md), [สิทธิ์/จริยธรรม/ความปลอดภัย](docs/09-ethics-security.md) และ [Export/Data Pipeline](docs/10-data-pipeline.md)
 
 ## Quick Start แบบย่อ
 
@@ -82,6 +82,8 @@ python .\examples\03_api_first\api_first.py --limit 5
 ทดลอง Resilient HTTP Client, Retry, Backoff และ Validation ได้ที่ [คู่มือระบบรองรับ Error](docs/08-error-resilience.md)
 
 ตรวจสิทธิ์, Privacy, robots.txt และ Pre-scraping Checklist ได้ที่ [คู่มือสิทธิ์/จริยธรรม/ความปลอดภัย](docs/09-ethics-security.md)
+
+ทดลอง Schema-first Data Pipeline และ Export ได้ที่ [คู่มือ Export และ Data Pipeline](docs/10-data-pipeline.md)
 
 หากต้องการตรวจสอบโครงสร้างและลำดับการเรียน ให้เปิด [ROADMAP.md](ROADMAP.md)
 

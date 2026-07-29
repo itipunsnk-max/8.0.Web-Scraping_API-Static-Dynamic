@@ -1,0 +1,6 @@
+[
+  {"record_id": "p10-001", "name": "Starter Course", "value": "199.00", "status": "active"},
+  {"record_id": "p10-002", "name": "Advanced Course", "value": 450, "status": "active"},
+  {"record_id": "p10-002", "name": "Advanced Course duplicate", "value": 450, "status": "active"},
+  {"record_id": "p10-003", "name": "Unknown Price", "value": "", "status": "pending"}
+]
