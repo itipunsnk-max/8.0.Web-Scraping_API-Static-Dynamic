@@ -44,7 +44,7 @@ Use Cases และ Capstone Project
 | 0 | วิเคราะห์และออกแบบ Repository | โครงสร้างและเอกสารตั้งต้น |
 | 1 | ติดตั้ง Python และเครื่องมือ | Environment ที่พร้อมใช้งานบน Windows — เสร็จแล้ว |
 | 2 | Web, HTML, HTTP และ Developer Tools | อ่านโครงสร้างหน้าเว็บและตรวจ API ได้ — เสร็จแล้ว |
-| 3 | API First | ดึง JSON และ Export ผลลัพธ์ได้ |
+| 3 | API First | ดึง JSON และ Export ผลลัพธ์ได้ — เสร็จแล้ว |
 | 4 | Static Scraping | อ่าน HTML และทำความสะอาดข้อมูลได้ |
 | 5 | Pagination และไฟล์ | วนหน้าและดาวน์โหลดไฟล์อย่างปลอดภัยได้ |
 | 6 | Playwright | อ่านข้อมูลที่โหลดด้วย JavaScript ได้ |
@@ -78,3 +78,4 @@ Use Cases และ Capstone Project
 - [ROADMAP](../ROADMAP.md) — ขอบเขตและสถานะของทุก Phase
 - [การติดตั้งสำหรับผู้เริ่มต้น](01-installation.md) — คู่มือ Setup บน Windows PowerShell
 - [พื้นฐาน Web, HTML, HTTP และ Developer Tools](02-web-basics.md) — คำศัพท์และการฝึกด้วย Local Mock Website
+- [API First](03-api-first.md) — ตรวจ API, อ่าน JSON และ Export ผลลัพธ์

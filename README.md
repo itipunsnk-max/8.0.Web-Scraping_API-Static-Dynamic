@@ -2,7 +2,7 @@
 
 คู่มือภาษาไทยสำหรับเรียน Web Scraping ด้วย Python ตั้งแต่พื้นฐานจนถึงการสร้างระบบที่นำไปใช้งานจริงได้ โดยเน้นความปลอดภัย จริยธรรม การดูแลรักษา และการส่งต่อข้อมูลไปยัง CSV, Excel, JSON, SQLite และ Power BI
 
-> สถานะปัจจุบัน: **Phase 2 — พื้นฐาน Web, HTML, HTTP และ Developer Tools**
+> สถานะปัจจุบัน: **Phase 3 — API First**
 
 ## Web Scraping คืออะไร
 
@@ -42,7 +42,7 @@ API First หมายถึงการตรวจสอบก่อนว่�
 
 ## Course Roadmap
 
-ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md) และ [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md)
+ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md), [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md) และ [API First](docs/03-api-first.md)
 
 ## Quick Start แบบย่อ
 
@@ -62,9 +62,18 @@ python -m http.server 8000 --directory mock_site/static
 
 จากนั้นเปิด `http://127.0.0.1:8000/index.html` ใน Chrome และอ่าน [คู่มือพื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md)
 
+ทดลอง API First และ Export ผลลัพธ์ได้ด้วย:
+
+```powershell
+Copy-Item .env.example .env
+python .\examples\03_api_first\api_first.py --limit 5
+```
+
+อ่านรายละเอียดได้ที่ [คู่มือ API First](docs/03-api-first.md)
+
 หากต้องการตรวจสอบโครงสร้างและลำดับการเรียน ให้เปิด [ROADMAP.md](ROADMAP.md)
 
-เมื่อได้รับอนุมัติให้ทำ Phase 1 จะเพิ่มคู่มือการติดตั้ง Virtual Environment, Dependencies และ Script สำหรับ Windows PowerShell จากนั้นจะมีคำสั่งทดสอบที่คัดลอกไปใช้งานได้จริง
+คู่มือการติดตั้ง, Scripts สำหรับ Windows PowerShell และตัวอย่าง API First ที่ทำเสร็จแล้วจะถูกขยายต่อทีละ Phase ตาม [ROADMAP.md](ROADMAP.md)
 
 ## แหล่งอ้างอิงหลัก
 
