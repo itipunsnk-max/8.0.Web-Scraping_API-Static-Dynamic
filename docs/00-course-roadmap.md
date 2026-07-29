@@ -49,7 +49,7 @@ Use Cases และ Capstone Project
 | 5 | Pagination และไฟล์ | วนหน้าและดาวน์โหลดไฟล์อย่างปลอดภัยได้ — เสร็จแล้ว |
 | 6 | Playwright | อ่านข้อมูลที่โหลดด้วย JavaScript, Interaction, Screenshot และ Download event ได้ — [Phase 6](06-dynamic-playwright.md) — เสร็จแล้ว |
 | 7 | Selenium | อ่านและดูแล Project ที่ใช้ Selenium ได้ — [Phase 7](07-selenium.md) — เสร็จแล้ว |
-| 8 | Error Resilience | มี Retry, Logging, Rate Limit และ Validation |
+| 8 | Error Resilience | มี Retry, Logging, Rate Limit และ Validation — [Phase 8](08-error-resilience.md) — เสร็จแล้ว |
 | 9 | Ethics and Security | ประเมินสิทธิ์และความเสี่ยงก่อนทำงานได้ |
 | 10 | Data Pipeline | จัดเก็บ Raw/Processed และ Export หลายรูปแบบได้ |
 | 11 | Testing and Maintenance | ตรวจจับ Parser เสียหรือ Schema เปลี่ยนได้ |
