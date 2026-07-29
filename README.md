@@ -2,7 +2,7 @@
 
 คู่มือภาษาไทยสำหรับเรียน Web Scraping ด้วย Python ตั้งแต่พื้นฐานจนถึงการสร้างระบบที่นำไปใช้งานจริงได้ โดยเน้นความปลอดภัย จริยธรรม การดูแลรักษา และการส่งต่อข้อมูลไปยัง CSV, Excel, JSON, SQLite และ Power BI
 
-> สถานะปัจจุบัน: **Phase 11 — Testing และ Maintenance**
+> สถานะปัจจุบัน: **Phase 12 — Use Cases**
 
 ## Web Scraping คืออะไร
 
@@ -42,7 +42,7 @@ API First หมายถึงการตรวจสอบก่อนว่�
 
 ## Course Roadmap
 
-ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md), [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md), [API First](docs/03-api-first.md), [Static Scraping](docs/04-static-scraping.md), [Pagination/Downloads](docs/05-pagination-downloads.md), [Dynamic Website ด้วย Playwright](docs/06-dynamic-playwright.md), [Selenium](docs/07-selenium.md), [ระบบรองรับ Error](docs/08-error-resilience.md), [สิทธิ์/จริยธรรม/ความปลอดภัย](docs/09-ethics-security.md), [Export/Data Pipeline](docs/10-data-pipeline.md) และ [Testing/Maintenance](docs/11-testing-maintenance.md)
+ดูรายละเอียดลำดับการเรียนและขอบเขตของแต่ละ Phase ได้ที่ [ROADMAP.md](ROADMAP.md), [Course Roadmap](docs/00-course-roadmap.md), [คู่มือการติดตั้ง](docs/01-installation.md), [พื้นฐาน Web, HTML, HTTP](docs/02-web-basics.md), [API First](docs/03-api-first.md), [Static Scraping](docs/04-static-scraping.md), [Pagination/Downloads](docs/05-pagination-downloads.md), [Dynamic Website ด้วย Playwright](docs/06-dynamic-playwright.md), [Selenium](docs/07-selenium.md), [ระบบรองรับ Error](docs/08-error-resilience.md), [สิทธิ์/จริยธรรม/ความปลอดภัย](docs/09-ethics-security.md), [Export/Data Pipeline](docs/10-data-pipeline.md), [Testing/Maintenance](docs/11-testing-maintenance.md) และ [Use Cases](docs/12-use-cases.md)
 
 ## Quick Start แบบย่อ
 
