@@ -54,7 +54,7 @@ Use Cases และ Capstone Project
 | 10 | Data Pipeline | จัดเก็บ Raw/Processed และ Export หลายรูปแบบได้ — [Phase 10](10-data-pipeline.md) — เสร็จแล้ว |
 | 11 | Testing and Maintenance | ตรวจจับ Parser เสียหรือ Schema เปลี่ยนได้ — [Phase 11](11-testing-maintenance.md) — เสร็จแล้ว |
 | 12 | Use Cases | ประกอบระบบจากปัญหาจริงหลายรูปแบบได้ — [Phase 12](12-use-cases.md) — เสร็จแล้ว |
-| 13 | Scheduling | ตั้งงานอัตโนมัติบน Windows ได้ |
+| 13 | Scheduling | ตั้งงานอัตโนมัติบน Windows ได้ — [Phase 13](13-scheduling-automation.md) — เสร็จแล้ว |
 | 14 | Documentation and CI | ตรวจ Test/Lint บน GitHub ได้ |
 | 15 | Final Review | ทำ Capstone และตรวจความพร้อมเผยแพร่ได้ |
 
