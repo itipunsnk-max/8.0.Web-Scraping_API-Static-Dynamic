@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability report
+    url: https://github.com/itipunsnk-max/8.0.Web-Scraping_API-Static-Dynamic/security/advisories/new
+    about: Please report security issues privately instead of opening a public issue.
