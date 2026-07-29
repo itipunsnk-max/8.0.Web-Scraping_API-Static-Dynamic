@@ -1,0 +1,5 @@
+[
+  {"record_id": "asset-001", "name": "North site", "value": 450, "status": "active"},
+  {"record_id": "asset-002", "name": "South site", "value": 380, "status": "active"},
+  {"record_id": "asset-002", "name": "South site", "value": 380, "status": "active"}
+]

@@ -1,0 +1,1 @@
+"""Solar datasheet catalog example."""

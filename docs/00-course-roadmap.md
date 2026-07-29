@@ -53,7 +53,7 @@ Use Cases และ Capstone Project
 | 9 | Ethics and Security | ประเมินสิทธิ์และความเสี่ยงก่อนทำงานได้ — [Phase 9](09-ethics-security.md) — เสร็จแล้ว |
 | 10 | Data Pipeline | จัดเก็บ Raw/Processed และ Export หลายรูปแบบได้ — [Phase 10](10-data-pipeline.md) — เสร็จแล้ว |
 | 11 | Testing and Maintenance | ตรวจจับ Parser เสียหรือ Schema เปลี่ยนได้ — [Phase 11](11-testing-maintenance.md) — เสร็จแล้ว |
-| 12 | Use Cases | ประกอบระบบจากปัญหาจริงหลายรูปแบบได้ |
+| 12 | Use Cases | ประกอบระบบจากปัญหาจริงหลายรูปแบบได้ — [Phase 12](12-use-cases.md) — เสร็จแล้ว |
 | 13 | Scheduling | ตั้งงานอัตโนมัติบน Windows ได้ |
 | 14 | Documentation and CI | ตรวจ Test/Lint บน GitHub ได้ |
 | 15 | Final Review | ทำ Capstone และตรวจความพร้อมเผยแพร่ได้ |

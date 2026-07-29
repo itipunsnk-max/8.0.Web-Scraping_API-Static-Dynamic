@@ -1,0 +1,7 @@
+{
+  "location": "Bangkok",
+  "forecast": [
+    {"date": "2026-07-30", "temperature_c": 31, "condition": "Cloudy", "precipitation_mm": 2.5},
+    {"date": "2026-07-31", "temperature_c": 32, "condition": "Rain", "precipitation_mm": 8.0}
+  ]
+}
