@@ -93,7 +93,7 @@ function markdownToHtml(markdown) {
 function renderLessonList(filter = "") {
   const query = filter.trim().toLowerCase();
   const visible = lessons.filter((lesson) => `${lesson.title} ${lesson.short} ${lesson.phase}`.toLowerCase().includes(query));
-  $("#lesson-list").innerHTML = visible.length ? visible.map((lesson) => `<button class="lesson-item ${lesson.id === state.currentId ? "active" : ""} ${state.completed.has(lesson.id) ? "completed" : ""}" type="button" data-lesson="${lesson.id}"><span class="lesson-number">${lesson.number}</span><span class="lesson-name">${escapeHtml(lesson.title)}</span><span class="lesson-check" aria-label="อ่านแล้ว">✓</span></button>`).join("") : `<p class="sidebar-note">ไม่พบบทเรียนที่ค้นหา</p>`;
+  $("#lesson-list").innerHTML = visible.length ? visible.map((lesson) => `<button class="lesson-item ${lesson.id === state.currentId ? "active" : ""} ${state.completed.has(lesson.id) ? "completed" : ""}" type="button" data-lesson="${lesson.id}" title="${escapeHtml(lesson.title)}" aria-label="บทที่ ${lesson.number} ${escapeHtml(lesson.title)}"><span class="lesson-number">${lesson.number}</span><span class="lesson-name">${escapeHtml(lesson.title)}</span><span class="lesson-check" aria-label="อ่านแล้ว">✓</span></button>`).join("") : `<p class="sidebar-note">ไม่พบบทเรียนที่ค้นหา</p>`;
   $("#lesson-list").querySelectorAll("[data-lesson]").forEach((button) => button.addEventListener("click", () => openLesson(button.dataset.lesson)));
 }
 

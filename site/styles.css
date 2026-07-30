@@ -207,3 +207,27 @@ body { font-size: 16px; line-height: 1.8; }
   .path-card strong { font-size: 1.2rem; }
   .path-card small { font-size: .84rem; }
 }
+
+/* Compact lesson index: show more of the course at a glance. */
+.lesson-list { gap: .12rem; }
+.lesson-item { grid-template-columns: 34px minmax(0, 1fr) 18px; align-items: start; gap: .45rem; padding: .42rem .62rem; }
+.lesson-item .lesson-name { display: -webkit-box; overflow: hidden; font-size: .84rem; line-height: 1.35; text-overflow: ellipsis; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.lesson-item .lesson-number { padding-top: .1rem; font-size: .72rem; }
+.lesson-item .lesson-check { padding-top: .05rem; font-size: .78rem; }
+.sidebar-intro { padding-bottom: 1.1rem; }
+.course-summary { margin-bottom: .9rem; padding: .82rem .9rem; }
+.progress-card { margin-block: .95rem .8rem; padding: .72rem .78rem; }
+
+@media (min-width: 901px) {
+  .app-layout { grid-template-columns: 350px minmax(0, 1fr); }
+}
+
+@media (max-width: 680px) {
+  .sidebar { width: min(94vw, 390px); }
+  .lesson-list { gap: .06rem; }
+  .lesson-item { grid-template-columns: 32px minmax(0, 1fr) 17px; padding: .38rem .58rem; }
+  .lesson-item .lesson-name { font-size: .86rem; }
+  .sidebar-intro { padding-bottom: .95rem; }
+  .course-summary { margin-bottom: .75rem; }
+  .progress-card { margin-block: .8rem .65rem; }
+}
