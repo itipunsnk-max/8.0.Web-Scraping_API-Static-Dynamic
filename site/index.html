@@ -1,56 +1,113 @@
 <!doctype html>
-<html lang="th">
+<html lang="th" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Web Scraping Zero to Practical — เรียน Web Scraping อย่างปลอดภัยและดูแลรักษาได้">
-    <title>Web Scraping Zero to Practical</title>
+    <meta name="theme-color" content="#f4f7f1">
+    <meta name="description" content="ห้องเรียน Web Scraping ภาษาไทย ตั้งแต่พื้นฐาน Web, API, Static และ Dynamic ไปจนถึง Data Pipeline, Testing และการนำไปใช้งานจริง">
+    <title>Web Scraping Zero to Practical | ห้องเรียน</title>
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <header class="hero">
-      <p class="eyebrow">PYTHON · API · STATIC · DYNAMIC · DATA PIPELINE</p>
-      <h1>Web Scraping<br><span>Zero to Practical</span></h1>
-      <p class="lead">หลักสูตรภาษาไทยสำหรับสร้าง scraper ที่ทดสอบได้ ปลอดภัย และส่งต่อข้อมูลให้ทีมใช้งานจริง</p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/itipunsnk-max/8.0.Web-Scraping_API-Static-Dynamic">เปิด Repository</a>
-        <a class="button secondary" href="https://github.com/itipunsnk-max/8.0.Web-Scraping_API-Static-Dynamic/blob/main/ROADMAP.md">ดู Roadmap</a>
+    <a class="skip-link" href="#main-content">ข้ามไปยังบทเรียน</a>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="กลับไปหน้าแรก">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="brand-copy"><strong>WEB SCRAPING</strong><small>ZERO TO PRACTICAL</small></span>
+        </a>
+        <div class="topbar-actions">
+          <a class="topbar-link desktop-only" href="https://github.com/itipunsnk-max/8.0.Web-Scraping_API-Static-Dynamic" target="_blank" rel="noreferrer">ดูบน GitHub <span aria-hidden="true">↗</span></a>
+          <button class="icon-button" id="theme-toggle" type="button" aria-label="เปิดโหมดกลางคืน" title="โหมดกลางคืน"><span aria-hidden="true">☾</span></button>
+          <button class="icon-button mobile-only" id="menu-toggle" type="button" aria-label="เปิดสารบัญ" aria-controls="sidebar" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+        </div>
+      </header>
+
+      <div class="app-layout">
+        <aside class="sidebar" id="sidebar" aria-label="สารบัญบทเรียน">
+          <div class="sidebar-intro">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div><strong>ห้องเรียนพร้อมอ่าน</strong><span>อ่านต่อได้ทุกอุปกรณ์</span></div>
+          </div>
+
+          <div class="course-summary">
+            <div class="summary-number">16</div>
+            <div><strong>บทเรียนครบเส้นทาง</strong><span>ตั้งแต่เริ่มต้นถึงใช้งานจริง</span></div>
+          </div>
+
+          <label class="search-box" for="lesson-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="lesson-search" type="search" placeholder="ค้นหาบทเรียน..." autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+
+          <div class="progress-card" aria-label="ความคืบหน้าการเรียน">
+            <div class="progress-heading"><span>ความคืบหน้าของคุณ</span><strong id="progress-label">0%</strong></div>
+            <div class="progress-track"><span id="progress-bar"></span></div>
+            <p id="progress-detail">เริ่มบทแรกได้เลย</p>
+          </div>
+
+          <nav class="lesson-list" id="lesson-list"></nav>
+          <p class="sidebar-note">เคล็ดลับ: กด <kbd>/</kbd> เพื่อค้นหา และสถานะจะถูกจำไว้ในเครื่องนี้</p>
+        </aside>
+
+        <div class="mobile-overlay" id="mobile-overlay" hidden></div>
+
+        <main class="main-content" id="main-content">
+          <section class="welcome" id="welcome-view">
+            <div class="welcome-copy">
+              <p class="eyebrow">PYTHON · API · STATIC · DYNAMIC · DATA</p>
+              <h1>เรียน Web Scraping<br><em>ให้ทำงานได้จริง</em></h1>
+              <p class="welcome-lead">คู่มือภาษาไทยที่พาไปตั้งแต่พื้นฐาน HTTP และ HTML จนถึงการสร้าง scraper ที่ปลอดภัย ทดสอบได้ และส่งต่อข้อมูลให้ทีมใช้งานต่อ</p>
+              <div class="welcome-actions">
+                <button class="button button-primary" id="start-learning" type="button">เริ่มบทเรียนแรก <span aria-hidden="true">→</span></button>
+                <button class="button button-quiet" id="continue-learning" type="button" hidden>อ่านต่อจากบทล่าสุด <span aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+            <div class="welcome-visual" aria-label="ภาพรวมเส้นทางการเรียน" role="img">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="code-card"><span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span><pre><code>response = requests.get(url)
+soup = BeautifulSoup(response.text)
+data = extract(soup)</code></pre><div class="code-status"><span>●</span> ready to learn</div></div>
+              <div class="floating-chip chip-top">01 — พื้นฐาน</div>
+              <div class="floating-chip chip-bottom">15 — ลงมือทำจริง</div>
+            </div>
+          </section>
+
+          <section class="quick-start" aria-labelledby="quick-start-title">
+            <div class="section-heading"><p class="eyebrow">LEARNING PATH</p><h2 id="quick-start-title">เส้นทางที่ออกแบบให้เรียนต่อได้</h2></div>
+            <div class="path-grid">
+              <button class="path-card path-card-green" type="button" data-lesson="01-installation"><span class="path-number">01—05</span><strong>วางพื้นฐาน</strong><small>ติดตั้งเครื่องมือ · Web · API · Static · Pagination</small><span class="path-arrow" aria-hidden="true">↗</span></button>
+              <button class="path-card path-card-yellow" type="button" data-lesson="06-dynamic-playwright"><span class="path-number">06—10</span><strong>สร้างระบบให้ทน</strong><small>Playwright · Selenium · Error · Ethics · Pipeline</small><span class="path-arrow" aria-hidden="true">↗</span></button>
+              <button class="path-card path-card-ink" type="button" data-lesson="11-testing-maintenance"><span class="path-number">11—15</span><strong>พร้อมใช้งานจริง</strong><small>Testing · Use cases · Schedule · CI · Final review</small><span class="path-arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </section>
+
+          <section class="reader-view" id="reader-view" hidden>
+            <div class="reader-toolbar">
+              <div><p class="eyebrow" id="lesson-phase">PHASE 01</p><p class="reader-location">Web Scraping Zero to Practical <span aria-hidden="true">/</span> <span id="lesson-position">บทที่ 1 จาก 16</span></p></div>
+              <button class="complete-button" id="mark-complete" type="button"><span class="check-icon" aria-hidden="true">✓</span><span id="complete-label">ทำเครื่องหมายว่าอ่านแล้ว</span></button>
+            </div>
+            <article class="lesson-card">
+              <div class="lesson-cover" aria-hidden="true"><span id="lesson-cover-number">01</span><span class="cover-line"></span><span class="cover-label">LESSON NOTES</span></div>
+              <div class="lesson-content" id="lesson-content"></div>
+            </article>
+            <nav class="lesson-navigation" aria-label="เปลี่ยนบทเรียน">
+              <button class="lesson-nav-button previous" id="previous-lesson" type="button"><span aria-hidden="true">←</span><span><small>บทก่อนหน้า</small><strong id="previous-title">—</strong></span></button>
+              <button class="lesson-nav-button next" id="next-lesson" type="button"><span><small>บทถัดไป</small><strong id="next-title">—</strong></span><span aria-hidden="true">→</span></button>
+            </nav>
+          </section>
+
+          <section class="error-view" id="error-view" hidden>
+            <div class="error-icon" aria-hidden="true">!</div><h2>เปิดบทเรียนไม่สำเร็จ</h2><p>ลองรีเฟรชหน้าอีกครั้ง หรือกลับไปเลือกบทเรียนจากสารบัญ</p><button class="button button-primary" id="back-home" type="button">กลับหน้าแรก</button>
+          </section>
+
+          <footer class="site-footer"><span>ทำเพื่อการเรียนรู้ Web Scraping อย่างรับผิดชอบ</span><a href="https://github.com/itipunsnk-max/8.0.Web-Scraping_API-Static-Dynamic" target="_blank" rel="noreferrer">แหล่งโค้ดบน GitHub ↗</a></footer>
+        </main>
       </div>
-    </header>
+    </div>
 
-    <main>
-      <section class="section intro">
-        <div>
-          <p class="eyebrow">THE PRINCIPLE</p>
-          <h2>เริ่มจาก API<br>แล้วค่อยเลือกวิธีที่เหมาะสม</h2>
-        </div>
-        <p>เรียนรู้ตั้งแต่ HTTP และ HTML ไปจนถึงการจัดการ error, schema, testing, Windows automation และ GitHub CI โดยใช้ local fixture เป็นค่าเริ่มต้นเพื่อให้ทดลองซ้ำได้โดยไม่ยิงเว็บไซต์จริง</p>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow">THE ROADMAP</p>
-        <h2>15 phases จากพื้นฐานถึง release</h2>
-        <div class="phase-grid">
-          <article><span>01—05</span><h3>Web Foundations</h3><p>Python, HTTP, API-first, static scraping, pagination และ downloads</p></article>
-          <article><span>06—10</span><h3>Production Patterns</h3><p>Playwright, Selenium, resilience, ethics, data pipeline และ export</p></article>
-          <article><span>11—15</span><h3>Operate & Share</h3><p>Testing, use cases, scheduling, GitHub CI, final review และ deployment</p></article>
-        </div>
-      </section>
-
-      <section class="section feature-row">
-        <div class="feature-card accent"><p class="eyebrow">SAFE BY DEFAULT</p><h3>ไม่ฝัง Secret</h3><p>มี security policy, secret scan, rate-limit guidance และ checklist ก่อนใช้แหล่งข้อมูลจริง</p></div>
-        <div class="feature-card"><p class="eyebrow">READY TO TEST</p><h3>Fixture-first</h3><p>มี tests, mock HTTP, parser contracts และ CI เพื่อจับ schema/selector ที่เปลี่ยน</p></div>
-        <div class="feature-card"><p class="eyebrow">BUILT FOR WINDOWS</p><h3>Run ได้จริง</h3><p>มี PowerShell runner, Task Scheduler, log, exit code และ lock file สำหรับงานตามเวลา</p></div>
-      </section>
-
-      <section class="section final-cta">
-        <p class="eyebrow">START HERE</p>
-        <h2>พร้อมสร้าง scraper ที่ดูแลต่อได้</h2>
-        <p>เปิดเอกสารใน repository แล้วเริ่มจาก Phase 0 หรือเลือก use case ที่ตรงกับงานของคุณ</p>
-        <a class="button primary" href="https://github.com/itipunsnk-max/8.0.Web-Scraping_API-Static-Dynamic/tree/main/docs">เปิดเอกสารทั้งหมด →</a>
-      </section>
-    </main>
-
-    <footer><span>Web Scraping Zero to Practical</span><span>Built for learning · Maintained with tests</span></footer>
+    <script src="/app.js" defer></script>
   </body>
 </html>
