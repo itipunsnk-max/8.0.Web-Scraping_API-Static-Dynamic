@@ -127,6 +127,7 @@ function updateNavigation(index) {
 async function openLesson(id, updateUrl = true) {
   const lesson = lessonById(id) || lessons[0]; const index = lessons.indexOf(lesson);
   state.currentId = lesson.id;
+  $("#main-content").classList.add("is-reading");
   localStorage.setItem("scraping-course-last", lesson.id);
   renderLessonList($("#lesson-search").value);
   $("#welcome-view").hidden = true; $("#error-view").hidden = true; $("#reader-view").hidden = false;
@@ -167,9 +168,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (queryLesson && lessonById(queryLesson)) openLesson(queryLesson, false);
   $("#start-learning").addEventListener("click", () => openLesson("00-course-roadmap"));
   $("#continue-learning").addEventListener("click", () => openLesson(localStorage.getItem("scraping-course-last") || "00-course-roadmap"));
-  $("#mark-complete").addEventListener("click", toggleComplete); $("#theme-toggle").addEventListener("click", toggleTheme); $("#menu-toggle").addEventListener("click", toggleSidebar); $("#mobile-overlay").addEventListener("click", closeSidebar); $("#back-home").addEventListener("click", () => { history.pushState({}, "", "/"); $("#error-view").hidden = true; $("#reader-view").hidden = true; $("#welcome-view").hidden = false; });
+  $("#mark-complete").addEventListener("click", toggleComplete); $("#theme-toggle").addEventListener("click", toggleTheme); $("#menu-toggle").addEventListener("click", toggleSidebar); $("#mobile-overlay").addEventListener("click", closeSidebar); $("#back-home").addEventListener("click", () => { history.pushState({}, "", "/"); $("#main-content").classList.remove("is-reading"); $("#error-view").hidden = true; $("#reader-view").hidden = true; $("#welcome-view").hidden = false; });
   $("#lesson-search").addEventListener("input", (event) => renderLessonList(event.target.value));
   document.addEventListener("keydown", (event) => { if (event.key === "/" && document.activeElement.tagName !== "INPUT") { event.preventDefault(); $("#lesson-search").focus(); } if (event.key === "Escape") closeSidebar(); });
   document.querySelectorAll("[data-lesson]").forEach((button) => button.addEventListener("click", () => openLesson(button.dataset.lesson)));
-  window.addEventListener("popstate", () => { const id = new URLSearchParams(location.search).get("lesson"); if (id && lessonById(id)) openLesson(id, false); else { $("#reader-view").hidden = true; $("#welcome-view").hidden = false; } });
+  window.addEventListener("popstate", () => { const id = new URLSearchParams(location.search).get("lesson"); if (id && lessonById(id)) openLesson(id, false); else { $("#main-content").classList.remove("is-reading"); $("#reader-view").hidden = true; $("#welcome-view").hidden = false; } });
 });
